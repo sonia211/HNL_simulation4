@@ -1,0 +1,108 @@
+#from tau
+
+#ParticleDecays:sophisticatedTau=2
+#TauDecays:mode=2
+
+#25:new= nu_Rmu nu_Rmu 1 0 0 2. 0. 0. 0. 8.0e-03
+
+25:mayDecay=on
+
+25:oneChannel 1 1. 1 -13 -211
+#15:oneChannel 1 0.1076825 1521 13 -211
+#15:addChannel 1 0.0069601 1521 13 -321
+#15:addChannel 1 0.1772832 1531 13 11 -12
+#15:addChannel 1 0.1731072 1531 13 13 -14
+#15:addChannel 1 0.2537447 1532 13 111 -211
+#15:addChannel 1 0.0015809 1532 13 311 -321
+#15:addChannel 1 0.0001511 1532 13 221 -321
+#15:addChannel 1 0.0083521 1533 13 -211 -311
+#15:addChannel 1 0.0042655 1533 13 111 -321
+#15:addChannel 1 0.0924697 1541 13 111 111 -211
+#15:addChannel 1 0.0925691 1541 13 -211 -211 211
+#15:addChannel 1 0.0039772 1542 13 111 -211 -311
+#15:addChannel 1 0.0034701 1542 13 -211 211 -321
+#15:addChannel 1 0.0014318 1542 13 -211 -321 321
+#15:addChannel 1 0.0015809 1542 13 111 311 -321
+#15:addChannel 1 0.0011932 1542 13 130 -211 310
+#15:addChannel 1 0.0006463 1542 13 111 111 -321
+#15:addChannel 1 0.0002386 1542 13 130 130 -211
+#15:addChannel 1 0.0002386 1542 13 -211 310 310
+#15:addChannel 1 0.0013821 1543 13 111 -211 221
+#15:addChannel 1 0.0017520 1544 13 22 111 -211
+#15:addChannel 1 0.0459365 1551 13 111 -211 -211 211
+#15:addChannel 1 0.0104401 1551 13 111 111 111 -211
+#15:addChannel 1 0.0049069 1561 13 111 111 -211 -211 211
+#15:addChannel 1 0.0009515 1561 13 111 111 111 111 -211
+#15:addChannel 1 0.0008342 1561 13 -211 -211 -211 211 211
+#15:addChannel 1 0.0001631 0 13 -211 -211 211 221
+#15:addChannel 1 0.0001491 0 13 111 111 -211 221
+#15:addChannel 1 0.0001392 0 13 111 111 -211 223
+#15:addChannel 1 0.0001193 0 13 -211 -211 211 223
+#15:addChannel 1 0.0004077 0 13 223 -321
+#15:addChannel 1 0.0004773 0 13 111 111 111 -321
+#15:addChannel 1 0.0003052 0 13 111 -211 211 -321
+#15:addChannel 1 0.0002784 0 13 221 -323
+#15:addChannel 1 0.0002366 0 13 111 111 -211 -311
+#15:addChannel 1 0.0002237 0 13 -211 -211 211 -311
+#15:addChannel 1 0.0002953 0 13 111 -211 -311 311
+#15:addChannel 1 0.0000590 0 13 111 -211 -321 321
+
+
+
+
+# ___ W, only muonic decay________________
+#24:onMode = off
+
+
+24:oneChannel = 1 0.1081660 23 -13 25
+24:addChannel = 1 0.3213690 23 1 -2
+
+#24:onMode = off;
+#24:onIfMatch = 13 -9900014
+#24:onIfMatch = -13 9900014
+#24:onIfMatch = -1 2
+#24:onIfMatch = 1 -2
+
+# ___ D forbid to decay ___________________
+#411:mayDecay = off
+#421:mayDecay = off
+411:onMode = off
+#421:onMode = off
+# ___ B0 forced to decay in N mu+ pi- ______
+
+511:onMode = off
+#511:oneChannel = 1 0.0001330 22 15 -13 -211
+#511:addChannel = 1 0.0002690 22 15 -13 -213
+#511:addChannel = 1 0.0207000 22 15 -13 -411
+#511:addChannel = 1 0.0570000 22 15 -13 -413
+#511:addChannel = 1 0.0023000 22 15 -13 -415
+#511:addChannel = 1 0.0045000 22 15 -13 -10411
+#511:addChannel = 1 0.0052000 22 15 -13 -10413
+#511:addChannel = 1 0.0083000 22 15 -13 -20413
+
+
+# ___ B+ forced to decay in N mu+ pi- ______
+#521:onMode = off
+#521:onIfMatch = 9900014 -13 -411 211
+#521:onIfMatch = 9900014 -13 -413 211
+
+521:oneChannel = 1 1. 22 25 -13 111
+521:addChannel = 1 1. 22 25 -13 113
+521:addChannel = 1 1. 22 25 -13 221
+521:addChannel = 1 1. 22 25 -13 223
+521:addChannel = 1 1. 22 25 -13 331
+521:addChannel = 1 1. 22 25 -13 -421
+521:addChannel = 1 1. 22 25 -13 -423
+521:addChannel = 1 1. 22 25 -13 -425
+521:addChannel = 1 1. 22 25 -13 -10421
+521:addChannel = 1 1. 22 25 -13 -10423
+521:addChannel = 1 1. 22 25 -13 -20423
+
+
+#14:mayDecay=on
+# Set decays channel
+#14:onMode = off
+#14:onIfAny = 24 13
+#14:onPosIfAny = -1 2 13
+#14:onNegIfAny = 1 -2 -13
+

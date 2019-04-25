@@ -1,0 +1,17 @@
+2017-09-22 14:37:39.768534
+0.983:  MinNodeSize=0.2%, AdaBoostBeta=0.211120814852, NCuts=39, MaxDepth=5, Ntrees=1957
+0.983:  MinNodeSize=0.3%, AdaBoostBeta=0.198875854618, NCuts=35, MaxDepth=4, Ntrees=1192
+0.982:  MinNodeSize=1%, AdaBoostBeta=0.0757744818917, NCuts=25, MaxDepth=5, Ntrees=885
+0.981:  MinNodeSize=0.3%, AdaBoostBeta=0.0813908419145, NCuts=21, MaxDepth=4, Ntrees=1333
+0.981:  MinNodeSize=0.2%, AdaBoostBeta=0.133194635721, NCuts=27, MaxDepth=3, Ntrees=2071
+0.980:  MinNodeSize=2%, AdaBoostBeta=0.333788415181, NCuts=33, MaxDepth=2, Ntrees=1195
+0.979:  MinNodeSize=1%, AdaBoostBeta=0.350129198309, NCuts=32, MaxDepth=3, Ntrees=1828
+0.979:  MinNodeSize=0.5%, AdaBoostBeta=0.400773397449, NCuts=16, MaxDepth=4, Ntrees=1609
+0.979:  MinNodeSize=0.2%, AdaBoostBeta=0.185703765118, NCuts=33, MaxDepth=2, Ntrees=1315
+0.978:  MinNodeSize=0.3%, AdaBoostBeta=0.0859416077608, NCuts=32, MaxDepth=2, Ntrees=2409
+0.978:  MinNodeSize=3%, AdaBoostBeta=0.0745660699881, NCuts=18, MaxDepth=3, Ntrees=1531
+0.977:  MinNodeSize=0.3%, AdaBoostBeta=0.221474655098, NCuts=33, MaxDepth=2, Ntrees=1886
+0.977:  MinNodeSize=3%, AdaBoostBeta=0.15449506459, NCuts=17, MaxDepth=4, Ntrees=2201
+0.975:  MinNodeSize=1%, AdaBoostBeta=0.269260537465, NCuts=10, MaxDepth=2, Ntrees=1625
+0.974:  MinNodeSize=3%, AdaBoostBeta=0.148109797875, NCuts=15, MaxDepth=5, Ntrees=2398
+0.000:  MinNodeSize=2%, AdaBoostBeta=0.239490435304, NCuts=39, MaxDepth=5, Ntrees=1321

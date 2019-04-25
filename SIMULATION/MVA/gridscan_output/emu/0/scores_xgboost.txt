@@ -1,0 +1,17 @@
+2017-09-22 14:33:45.692420
+0.982:  n_estimators=1440, max_depth=2, min_child_weight=13
+0.981:  n_estimators=2182, max_depth=2, min_child_weight=15
+0.000:  n_estimators=1602, max_depth=4, min_child_weight=14
+0.000:  n_estimators=2445, max_depth=5, min_child_weight=15
+0.000:  n_estimators=520, max_depth=5, min_child_weight=7
+0.000:  n_estimators=1004, max_depth=4, min_child_weight=1
+0.000:  n_estimators=1867, max_depth=3, min_child_weight=16
+0.000:  n_estimators=250, max_depth=5, min_child_weight=10
+0.000:  n_estimators=998, max_depth=4, min_child_weight=5
+0.000:  n_estimators=2439, max_depth=2, min_child_weight=14
+0.000:  n_estimators=2032, max_depth=3, min_child_weight=7
+0.000:  n_estimators=726, max_depth=4, min_child_weight=16
+0.000:  n_estimators=1254, max_depth=5, min_child_weight=6
+0.000:  n_estimators=803, max_depth=3, min_child_weight=14
+0.000:  n_estimators=2425, max_depth=5, min_child_weight=17
+0.000:  n_estimators=2267, max_depth=3, min_child_weight=5

@@ -1,0 +1,18 @@
+#B0
+511:oneChannel = 1 1. 22 15 -13 -211
+511:addChannel = 1 1. 22 15 -13 -213
+511:addChannel = 1 1. 22 15 -13 -411
+511:addChannel = 1 1. 22 15 -13 -413
+511:addChannel = 1 1. 22 15 -13 -415
+#511:addChannel = 1 1. 22 15 -13 -10411
+#511:addChannel = 1 1. 22 15 -13 -10413
+#511:addChannel = 1 1. 22 15 -13 -20413
+
+#Bs0
+
+531:oneChannel = 1 1. 22 15 -13 -321
+531:addChannel = 1 1. 22 15 -13 -323
+531:addChannel = 1 1. 22 15 -13 -431
+531:addChannel = 1 1. 22 15 -13 -433
+531:addChannel = 1 1. 22 15 -13 -435
+

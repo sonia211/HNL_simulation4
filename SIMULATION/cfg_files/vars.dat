@@ -1,0 +1,6 @@
+m_or_d NAME MIN MAX PLOTNAME IVALUE
+True N_tau 0. 3. Ntau 0.
+True N_Xdiff -6. 6. NTdiff 0.
+True N_Ydiff -10. 10. NTdiff 0.
+True N_Ziff -15. 15. NTdiff 0.
+True N_Tdiff 0. 30. NTdiff 0.

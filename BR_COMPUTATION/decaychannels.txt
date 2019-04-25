@@ -1,0 +1,8 @@
+\Gamma(    \mu^-            \tau^+                   \nu_\tau) = \SI{                6.30427e-16}{\MeV} \\
+\Gamma(    \mu^-               e^+                      \nu_e) = \SI{                7.99114e-16}{\MeV} \\
+\Gamma(  \nu_\mu               e^-                        e^+) = \SI{                1.01206e-16}{\MeV} \\
+\Gamma(  \nu_\mu             \nu_e                \bar{\nu_e}) = \SI{                1.99957e-16}{\MeV} \\
+\Gamma(  \nu_\mu             \mu^-                      \mu^+) = \SI{                4.56109e-16}{\MeV} \\
+\Gamma(  \nu_\mu           \nu_\mu              \bar{\nu_\mu}) = \SI{                3.99914e-16}{\MeV} \\
+\Gamma(  \nu_\mu            \tau^-                     \tau^+) = \SI{                5.48496e-17}{\MeV} \\
+\Gamma(  \nu_\mu          \nu_\tau             \bar{\nu_\tau}) = \SI{                1.99957e-16}{\MeV} \\

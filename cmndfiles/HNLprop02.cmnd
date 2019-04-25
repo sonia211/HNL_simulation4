@@ -1,0 +1,23 @@
+# This is the commands list to define the new "N" particle.
+# The nu_mu (id=14) is used as a basis, and its properties and decays modes are completely reset.
+
+
+#Change properties with id:all = name antiName spinType(2*s=1) chargeType colType m0 mWidth mMin mMax tau0
+#Higgs-like: 
+
+14:new = N Nbar 2 0 0 1.232 0.117 1.08 1.6 0.
+14:mayDecay=on
+14:isVisible=on
+#14:doForceWidth=on
+14:addChannel = 1 1. 0 1 24 13
+14:addChannel = 1 1. 0 1 -24 -13
+#14:addChannel = 1 1. 0 1 -1 2 13
+
+
+
+#14:mayDecay=on
+# Set decays channel
+#14:onMode = off
+#14:onIfAny = 24 13
+#14:onPosIfAny = -1 2 13
+#14:onNegIfAny = 1 -2 -13

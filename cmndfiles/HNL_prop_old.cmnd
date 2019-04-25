@@ -1,0 +1,30 @@
+# This is the commands list to define the new "N" particle.
+# The nu_mu (id=14) is used as a basis, and its properties and decays modes are completely reset.
+
+
+#Change properties with id:all = name antiName spinType(2*s=1) chargeType colType m0 mWidth mMin mMax tau0
+
+14:all = N Nbar 2 0 0 1 1e12 1 10000 1e-12
+# flag  ParticleDecays:allowPhotonRadiation   (default = off) 
+
+
+# Set decay modes from scratch using id:oneChannel = onMode bRatio meMode product1 product2 .... 
+
+# int DecayChannel::onMode()  
+# set or get the onMode of a decay channel,
+# 0 if a channel is off,
+# 1 if on,
+# 2 if on for a particle but off for an antiparticle,
+# 3 if on for an antiparticle but off for a particle.
+# If a particle is its own antiparticle then 2 is on and 3 off but, of course, for such particles it is much simpler and safer to use only 1 and 0.
+# The 2 and 3 options can be used e.g. to encode CP violation in B decays, or to let the W's in a q qbar → W^+ W^- process decay in different channels. 
+
+# double DecayChannel::bRatio()  
+# set or get the branching ratio of the channel. Second argument only for internal use. 
+
+# int DecayChannel::meMode()  
+# set or get the mode of processing this channel, possibly with matrix elements 
+# see list of decays on http://home.thep.lu.se/Pythia/pythia82html/ParticleDecays.html
+
+14:oneChannel = 1 1e-6 0 13 211
+14:addChannel = 1 1e-6 0 -13 -211

@@ -1,0 +1,17 @@
+2017-09-22 14:28:49.862845
+0.985:  n_estimators=439, loss=exponential, learning_rate=0.131948185581, min_weight_fraction_leaf=0.031998284111, max_depth=3
+0.985:  n_estimators=253, loss=deviance, learning_rate=0.167400121324, min_weight_fraction_leaf=0.0350050584219, max_depth=4
+0.985:  n_estimators=450, loss=deviance, learning_rate=0.055408193305, min_weight_fraction_leaf=0.0407625883653, max_depth=5
+0.985:  n_estimators=243, loss=exponential, learning_rate=0.152028254372, min_weight_fraction_leaf=0.0324536041197, max_depth=4
+0.985:  n_estimators=255, loss=deviance, learning_rate=0.0946779459305, min_weight_fraction_leaf=0.0352047123057, max_depth=3
+0.984:  n_estimators=118, loss=exponential, learning_rate=0.146088603529, min_weight_fraction_leaf=0.0452302128264, max_depth=4
+0.984:  n_estimators=112, loss=deviance, learning_rate=0.17107426779, min_weight_fraction_leaf=0.0332485923003, max_depth=5
+0.984:  n_estimators=363, loss=exponential, learning_rate=0.161657494131, min_weight_fraction_leaf=0.0248935741994, max_depth=2
+0.984:  n_estimators=490, loss=deviance, learning_rate=0.0981736246779, min_weight_fraction_leaf=0.0436677576941, max_depth=4
+0.984:  n_estimators=410, loss=deviance, learning_rate=0.113936957117, min_weight_fraction_leaf=0.0384279711388, max_depth=5
+0.984:  n_estimators=497, loss=exponential, learning_rate=0.170234382334, min_weight_fraction_leaf=0.0220073914937, max_depth=3
+0.983:  n_estimators=394, loss=deviance, learning_rate=0.0860089482372, min_weight_fraction_leaf=0.0159217669783, max_depth=4
+0.982:  n_estimators=67, loss=deviance, learning_rate=0.145790751294, min_weight_fraction_leaf=0.0229840737853, max_depth=2
+0.982:  n_estimators=124, loss=exponential, learning_rate=0.101002052922, min_weight_fraction_leaf=0.0201803181902, max_depth=2
+0.982:  n_estimators=274, loss=deviance, learning_rate=0.0190703459232, min_weight_fraction_leaf=0.0454574051314, max_depth=3
+0.000:  n_estimators=333, loss=deviance, learning_rate=0.178139509101, min_weight_fraction_leaf=0.00629911483094, max_depth=4

@@ -1,0 +1,13 @@
+This directory contains several config files
+
+*B_wmeson_HNL*.cmnd:	pythia config files
+			c = charged meson -> HNL produced by B+ or Bs
+			n = neutral meson -> HNL produced by B0 or Bc
+			
+			the number after 'HNL' corresponds to the chosen pID
+			15: tau, 	corresponds to spin 1/2 model
+			25: Higgs,	corresponds to spin 0 model
+
+hnldecayBR_ch*.dat	corresponds to branching ratios computed by ../computeBR.py, using FairShip/python/hnl.py
+			ch* : chosen decay channel (pi- mu+; pi+ mu-; ...)
+

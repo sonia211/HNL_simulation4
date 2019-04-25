@@ -1,0 +1,104 @@
+
+# coding: utf-8
+
+# In[2]:
+
+
+#get kerberos token for eos
+import getpass, os
+os.system("echo %s | kinit gandreas@CERN.CH" %getpass.getpass()) 
+
+
+# In[3]:
+
+
+import sys
+tag = 1
+decay = "emu"
+out_tag = "25102017"
+k=5
+best_classifier_name="xgboost"
+classifiers_dir = 'classifiers/'
+classifiers_subdir = "/trained_"+best_classifier_name+str(tag)+"_"+decay+"/"
+dir_name = classifiers_dir+classifiers_subdir
+if not os.path.exists(dir_name):
+    raise Exception("Cannot find the classifiers folder!")
+    
+best_classifier_name = 'xgboost'
+
+
+# In[4]:
+
+
+#X-checking
+if (len(os.listdir(dir_name))!=k):
+    raise Exception("Number of folds != number of classifiers found in", dir_name)
+
+
+# In[11]:
+
+
+import cuts
+cuts = (cuts.Lb_Lemu_preselection+cuts.Lb_Lemu_HOP_FD_cut).GetTitle() #if data!! None, if MC
+
+
+# In[12]:
+
+
+#retrieve trained classifiers
+import pickle
+
+k_classifiers=[]
+for i in range(k):
+    file_name = dir_name+best_classifier_name+"_k"+str(i)+".pickle.dat"
+    k_classifiers.append(pickle.load(open(file_name, "r")))
+    
+if os.path.exists(file_name):
+        best_classifier = pickle.load(open(file_name, "r"))
+else: raise Exception("Cannot find the classifier!")
+    
+#branches = best_classifier.features ##for now they are set manyally. I'll fix this later byt taking them from vars_db
+branches = k_classifiers[0].features
+branches = [var.replace("_mathPLUS_", "+").replace("_mathMINUS_", "-").replace("_mathTIMES_", "*").replace("_mathOVER_", "/") for var in branches]
+additional_branches = ['Lb_M', 'eventNumber'] #spectator variables and others
+
+
+# In[ ]:
+
+
+from tools.MVA2root import MVA2root
+
+MVA2root (k_classifiers,
+          classifier_name=best_classifier_name+str(tag),
+          inputfilenames = [os.getenv("LBMICKJOBLOC")+"209/*/DVNtuple.root", os.getenv("LBMICKJOBLOC")+"210/*/DVNtuple.root"],
+          tuplename = 'Lb2LemuTuple/DecayTree',
+          max_files_atatime = 50,
+          branches = branches+additional_branches,
+          outfilenameroot = (os.getenv("GUIDOANAEOSLOC")+"tuples/S28/"+out_tag+"/LbLemu_BDT_"+str(tag)),
+          fix_features_names_for_MVA = True,
+          cuts=cuts
+         )
+
+
+# In[8]:
+
+
+from tools.MVA2root import MVA2root
+
+MVA2root (k_classifiers,
+          classifier_name = best_classifier_name+str(tag),
+          inputfilenames = [os.getenv("GUIDOANAEOSLOC")+"tuples/S28/MC/Lb_Lemu_MC_2016_M*.root"],
+          tuplename = 'Lb2LemuTuple/DecayTree',
+          max_files_atatime = 50,
+          branches = branches+additional_branches,
+          outfilenameroot = (os.getenv("GUIDOANAEOSLOC")+"tuples/S28/"+out_tag+"/LbLemu_MC_test_BDT"),
+          fix_features_names_for_MVA = True,
+          cuts="1"
+         )
+
+
+# In[ ]:
+
+
+
+

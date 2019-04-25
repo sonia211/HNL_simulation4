@@ -1,0 +1,25 @@
+# This is the commands list to define the new "N" particle.
+# The nu_mu (id=14) is used as a basis, and its properties and decays modes are completely reset.
+
+
+#Change properties with id:all = name antiName spinType(2*s=1) chargeType colType m0 mWidth mMin mMax tau0
+#Life time (in mm/c) inspired from W boson...
+14:name = N
+14:antiName = Nbar
+#14:m0 = 60
+14:mMin = 10
+14:mMax = 0
+#14:tau0 = 1e-25
+#14:mWidth = 1.92283
+
+#24:tau0 = 0.
+
+
+# Set decays channel
+
+
+14:onMode = off
+#14:onPosIfAny = -1 2 13
+#14:onNegIfAny = 1 -2 -13
+14:onPosIfAny = -13 -24
+14:onNegIfAny = 13 24

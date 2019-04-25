@@ -1,0 +1,21 @@
+stages:
+  - build
+
+before_script:
+  - git submodule update --init --recursive
+  - source /root/run_kinit.sh
+
+make_and_test:
+  image: analysisrunner
+  stage: build
+  tags: 
+    - Lb2Lemu
+
+  script:
+    - source scripts/setup_env.sh compile
+    - source scripts/setup.sh snake
+    - export TEST=true
+    - snakemake test
+    
+
+

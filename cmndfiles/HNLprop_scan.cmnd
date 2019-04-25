@@ -1,0 +1,106 @@
+# This is the commands list to define the new "N" particle.
+# The nu_mu (id=14) is used as a basis, and its properties and decays modes are completely reset.
+
+
+#Change properties with id:all = name antiName spinType(2*s=1) chargeType colType m0 mWidth mMin mMax tau0 res dec ext vis wid
+
+# ___ HNL _______________________________
+
+#9900014:m0=2.06
+#9900014:mMin=0.
+#9900014:mMax=0.
+#9900014:mWidth=0.
+#9900014:tau0=3e+01
+9900014:mayDecay=on
+
+
+9900014:oneChannel = 1 0.198776 22 13 -1 2
+9900014:addChannel = 1 0.010206 22 13 -1 4
+9900014:addChannel = 1 0.000003 22 13 -1 6
+9900014:addChannel = 1 0.010207 22 13 -3 2
+9900014:addChannel = 1 0.198390 22 13 -3 4
+9900014:addChannel = 1 0.000151 22 13 -3 6
+9900014:addChannel = 1 0.000006 22 13 -5 2
+9900014:addChannel = 1 0.000367 22 13 -5 4
+9900014:addChannel = 1 0.081893 22 13 -5 6
+9900014:addChannel = 1 0.198776 22 -13 1 -2
+9900014:addChannel = 1 0.010206 22 -13 1 -4
+9900014:addChannel = 1 0.000003 22 -13 1 -6
+9900014:addChannel = 1 0.010207 22 -13 3 -2
+9900014:addChannel = 1 0.198390 22 -13 3 -4
+9900014:addChannel = 1 0.000151 22 -13 3 -6
+9900014:addChannel = 1 0.000006 22 -13 5 -2
+9900014:addChannel = 1 0.000367 22 -13 5 -4
+9900014:addChannel = 1 0.081893 22 -13 5 -6
+9900014:addChannel = 1 0.000000 22 13 -11 9900012
+9900014:addChannel = 1 0.000000 22 -13 11 9900012
+9900014:addChannel = 1 0.000000 22 13 -15 9900016
+9900014:addChannel = 1 0.000000 22 -13 15 9900016
+ 
+
+
+#9900014:isVisible=on
+9900014:isResonance=false
+
+#9900014:oneChannel = 1 1. 23 13 -1 2
+#9900014:addChannel = 1 1. 23 -13 1 -2
+
+
+#9900014:onMode = off
+#9900014:onIfMatch = 13 -1 2
+#9900014:onIfMatch = 13 1 -2
+
+
+# ___ W, only muonic decay________________
+#24:onMode = off
+
+
+24:oneChannel = 1 0.1081660 23 -13 9900014
+24:addChannel = 1 0.3213690 23 1 -2
+
+#24:onMode = off;
+#24:onIfMatch = 13 -9900014
+#24:onIfMatch = -13 9900014
+#24:onIfMatch = -1 2
+#24:onIfMatch = 1 -2
+
+# ___ D forbid to decay ___________________
+#411:mayDecay = off
+#421:mayDecay = off
+411:onMode = off
+#421:onMode = off
+# ___ B0 forced to decay in N mu+ pi- ______
+511:oneChannel = 1 0.0001330 22 9900014 -13 -211
+511:addChannel = 1 0.0002690 22 9900014 -13 -213
+511:addChannel = 1 0.0207000 22 9900014 -13 -411
+511:addChannel = 1 0.0570000 22 9900014 -13 -413
+511:addChannel = 1 0.0023000 22 9900014 -13 -415
+511:addChannel = 1 0.0045000 22 9900014 -13 -10411
+511:addChannel = 1 0.0052000 22 9900014 -13 -10413
+511:addChannel = 1 0.0083000 22 9900014 -13 -20413
+
+
+# ___ B0 forced to decay in N mu+ pi- ______
+#521:onMode = off
+#521:onIfMatch = 9900014 -13 -411 211
+#521:onIfMatch = 9900014 -13 -413 211
+
+521:oneChannel = 1 0.0000720 22 9900014 -13 111
+521:addChannel = 1 0.0001450 22 9900014 -13 113
+521:addChannel = 1 0.0000840 22 9900014 -13 221
+521:addChannel = 1 0.0001450 22 9900014 -13 223
+521:addChannel = 1 0.0000840 22 9900014 -13 331
+521:addChannel = 1 0.0224000 22 9900014 -13 -421
+521:addChannel = 1 0.0617000 22 9900014 -13 -423
+521:addChannel = 1 0.0030000 22 9900014 -13 -425
+521:addChannel = 1 0.0049000 22 9900014 -13 -10421
+521:addChannel = 1 0.0056000 22 9900014 -13 -10423
+521:addChannel = 1 0.0090000 22 9900014 -13 -20423
+
+
+#14:mayDecay=on
+# Set decays channel
+#14:onMode = off
+#14:onIfAny = 24 13
+#14:onPosIfAny = -1 2 13
+#14:onNegIfAny = 1 -2 -13

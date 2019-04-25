@@ -1,0 +1,6 @@
+2017-09-22 14:28:18.450817
+Performing grid search in 4 threads
+4 evaluations done
+8 evaluations done
+12 evaluations done
+16 evaluations done
